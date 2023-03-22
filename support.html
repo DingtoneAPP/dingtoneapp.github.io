@@ -1,0 +1,287 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>叮咚技术支持中心 免费网络电话|免费短信|语音对讲|iPhone and 安卓</title>
+<meta name="description" content="叮咚是智能手机上的免费网络电话应用。只要您与好友的手机都下载了叮咚， 无论何时何地，用叮咚给您好友打电话，收发短信，彻底免费。叮咚不仅是一款超高品质的免费VoIP电话应用，还是一款非常出色的移动IM。不但提供超强的手机聊天功能，还能即时向您好友发送照片、视频、地理位置。免费国际长途，免费长途电话，免费短信尽情用。叮咚还紧密集成了Facebook，人人网，微博。用叮咚给您的亲友、网友、粉丝煲电话粥再也不用担心话费！" />
+<meta name="keywords" content="免费电话,免费打电话,免费视频电话,免费通话,网络电话,免费网络电话,VoIP电话,IP电话,免费IP电话,手机IP电话, 电话,打电话,短信,免费短信,免费VoIP,免费国际长途,国际长途电话,免费长途电话,移动IM,手机聊天,移动聊天,语音群聊,语音对讲,飞信,微信,米聊,叮咚,Dingtone" />
+<link rel="SHORTCUT ICON" href="/images/favicon.ico"/>
+<link href="/res/v3/cn/css/main.css" rel="stylesheet" type="text/css" />
+<link href="/res/z.css"  rel="stylesheet" type="text/css" />
+<style>
+.hidden {display:none;}
+
+.deviceType-input {}
+.deviceType-list {}
+
+.issueType-input {}
+.issueType-list {}
+
+input.error-hint{
+    border:1px solid #BD2D30;
+}
+
+</style>
+
+
+</head>
+
+<body>
+<div class="main">
+<div class="top">
+	<div id="wrapper">
+    	<div class="header">
+        	<div class="header_logo"><a href="index.html"><img src="/res/v3/cn/images/logo.png" /></a></div>
+            <div class="header_right">
+            	<div class="header_faq">
+                	<ul>
+                    	<li class="nobor"><a href="faq.html">常见问题</a></li>
+                        <li><a href="support.html">技术支持</a></li>
+                        <li><a href="http://blog.dingtone.me/cn/">博客</a></li>
+                        <li onclick="javascript:openShutManager(this,'box1',false)" style="cursor:pointer;"><a>中文</a><i></i></li>
+                            <div class="header_faq_sub" id="box1" style="display:none">
+                            	<input type="hidden" id="language" value="cn"/>
+                                <ul>
+                                    <li><a href="../en/support.html">English</a></li>
+                                    <li><a href="../es/support.html">Español</a></li>
+                                    <li><a href="../pt/support.html">Português</a></li>
+                                    <li><a href="../tr/support.html">Türk</a></li>
+                                    <li><a href="../fr/support.html">Français</a></li>
+                                    <li><a href="support.html">中文</a></li>
+                                </ul>
+                            </div>
+                    </ul>
+                </div>
+                <div class="header_nav">
+                	<ul>
+						<li class="default"><a href="buy/index.html" class="nobor">充值</a></li>
+						<li class="aheadbnt" id="download"><a href="">下载</a></li>
+                    	<li><a href="index.html#rates">资费</a></li>
+                    	<li><a href="index.html#makeItFree">免费电话</a></li>
+                    	<li><a href="index.html" class="nobor">首页</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="search">
+	<div id="wrapper">
+    	<div class="search_img">叮咚技术支持中心</div>
+    </div>
+</div>
+<div class="faq_con" id="wrapper">
+    <div class="faq_con01">
+		<h4>提出问题</h4>
+        <div class="support_con">请尽可能详细填写所有信息，以便我们完整了解您遇到的问题。如果需要进一步的信息，我们可能通过邮件联系您。然而，请理解我们不一定能处理、回复用户提交给我们的所有问题。</div>
+        <div class="support_conli">
+        	<form action="" method="get">
+                <ul>
+                    <li><span>姓名：</span><input name="" type="text" id="name" maxlength="100" class="support_con_input" oninput="javascript:popNote();"/><br/><em id="nameTips"></em></li>
+                    <li><span>邮箱地址：</span><input name="" type="text" id="email" maxlength="100" class="support_con_input" /><br/><em id="emailTips"></em></li>
+                    <li>
+                    <i><input name="" type="button" class="deviceType-input"/></i>
+                        <span>移动设备类型：</span>
+                        <input type="text" id="deviceTypeText" value="请选择" class="support_con_input deviceType-input"/>
+                        <input type="hidden" id="deviceType" value="" />
+                        <font>（请选择您使用的移动设备）</font>
+                        <br/><em id="deviceTypeTips"></em>
+                        <div id="LM1" class="support_con_subdiv deviceType-list hidden">
+                            <ul>
+                            	<li data-device-type="">请选择</li>
+                                <li data-device-type="11">iPhone 7</li>
+                                <li data-device-type="10">iPhone 6S</li>
+                                <li data-device-type="9">iPhone 6</li>
+                            	<li data-device-type="8">iPhone 5S</li>
+                            	<li data-device-type="7">iPhone 5C</li>
+                            	<li data-device-type="6">iPhone 5</li>
+                            	<li data-device-type="5">iPhone 4S</li>
+                            	<li data-device-type="4">iPhone 4</li>
+                            	<li data-device-type="3">iPhone 3GS</li>
+                            	<li data-device-type="2">iPhone 3G</li>
+                            	<li data-device-type="1">iPhone</li>
+                            	<li data-device-type="105">iPad mini</li>
+                            	<li data-device-type="104">iPad 4</li>
+                            	<li data-device-type="103">iPad 3</li>
+                           		<li data-device-type="102">iPad 2</li>
+                            	<li data-device-type="101">iPad</li>
+                            	<li data-device-type="201">iPod Touch</li>
+                            	<li data-device-type="301">Android Phone</li>
+                                <li data-device-type="351">Android Pad</li>
+                                <li data-device-type="401">Kindle Fire</li>
+                                <li data-device-type="501">Windows Phone</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                    <i><input name="" type="button" class="issueType-input"/></i>
+                        <span>问题类型：</span>
+                        <input type="text" id="issueTypeText" value="请选择" class="support_con_input issueType-input"/>
+                        <input type="hidden" id="issueType" value=""/>
+                        <font>（您遇到的问题属于下面哪一类？）</font>
+                        <br/><em id="issueTypeTips"></em>
+                        <div id="LM2" class="support_con_subdiv issueType-list hidden">
+                            <ul>
+                            	<li data-issue-type="">请选择</li>
+                                <li data-issue-type="1">下载叮咚</li>
+                                <li data-issue-type="2">激活叮咚</li>
+                                <li data-issue-type="3">找不到叮咚好友</li>
+                                <li data-issue-type="4">找不到Facebook好友</li>
+                                <li data-issue-type="5">接打电话</li>
+                                <li data-issue-type="6">多方通话</li>
+                                <li data-issue-type="7">收发短信</li>
+                                <li data-issue-type="8">手机群聊</li>
+                                <li data-issue-type="9">没收到叮咚币</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><span>问题描述：</span><textarea name="" cols="" rows="" class="support_con_input" id="description" maxlength="2048"></textarea><br/><em id="descTips"></em></li>
+                    <li><font class="nopad">（请尽量把问题描述清楚）</font></li>
+                    <li><input name="" type="button" value="提交问题" class="support_con_bot" onclick="javascript:submitIssue();"/></li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <div class="faq_con01">
+		<h4>反馈与建议</h4>
+        <div class="support_con support_con02">请尽可能详细填写所有信息，以便我们完整了解您遇到的问题。如果需要进一步的信息，我们可能通过邮件联系您。然而，请理解我们不一定能处理、回复用户提交给我们的所有问题。</div>
+        <div class="support_conli">
+        	<form action="" method="get">
+                <ul>
+                    <li><span>您的建议：</span><input name="" id="idea_title" type="text" maxlength="100" class="support_con_input" /><br/><em id="ideaTitleTips"></em></li>
+                    <li><span>请详细描述您的建议：</span><textarea name="" id="idea_detail" maxlength="2048" cols="" rows="" class="support_con_input"></textarea><br/><em id="ideaDetailTips"></em></li>
+                    <li><input name="" type="button" value="提交" class="support_con_bot support_con_bot02" onclick="javascript:submitIdea();"/></li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="foot">
+	<div id="wrapper">
+		<a name="download"></a>
+    	<div class="foot_font">
+            <ul>
+            	<h4>条款须知</h4>
+                <li><a href="privacy_policy.html">隐私政策</a></li>
+                <li><a href="Terms_of_Service.html">服务条款</a></li>
+            </ul>
+            <ul>
+            	<h4>关注我们</h4>
+            	<li><a href="http://blog.dingtone.me/cn/">博客</a></li>
+                <li><a href="http://weibo.com/p/1006062781676923/home?from=page_100606&mod=TAB#place">微博</a></li>
+                <!-- li><a href="http://www.facebook.com/dingtone">微信</a></li-->
+                <li><a href="http://qun.qzone.qq.com/group#!/347752322/home">QQ群</a></li>
+            </ul>
+            <ul>
+            	<h4>关于我们</h4>
+                <li><a href="mailto:info@dingtone.me">联系我们</a></li>
+                <li><a href="support.html">技术支持</a></li>
+                <li><a href="faq.html">常见问题</a></li>
+            </ul>
+            <ul class="nobor">
+            	<li><img src="/res/v3/cn/images/logo_icon.png" class="img" /><img src="/res/v3/cn/images/wechatqrcode.jpg" /></li>
+            </ul>
+        </div>
+        <!-- <div class="foot_ding">版权所有© 杭州腾展科技有限公司</div> -->
+        <div class="foot_ding">&copy; Dingtone. All Rights Reserved. 2018</div>
+    </div>
+
+	<div class="mask"></div>
+	<div id="downloadDlg" class="mess">
+		<div class="mess_tit">免费下载叮咚</div>
+    	<div class="mess_txt">
+		<ul>
+    	<li><p>安卓下载</p>
+      		<a target="_blank" href="https://play.google.com/store/apps/details?id=me.dingtone.app.im"><img src="/res/v3/cn/images/down_bot03.png" width="200" height="70" alt="android"/></a></li>
+    	<li><p>苹果下载</p>
+      		<a target="_blank" href="javascript:jump2appstore();"><img src="/res/v3/cn/images/down_bot01.png" width="192" height="70" alt="ios" /></a></li>
+    	</ul>
+		</div>
+		<div class="clear"></div>
+		<div class="mess_img"><img src="/res/v3/cn/images/img1.png" width="278" height="288" /></div>
+		<div class="cancel mess_close close-download" style="cursor:pointer;"><img src="/res/v3/cn/images/close.png" width="40" height="40" alt="close" /></div>
+	</div>
+
+	<div id="noteDlg" class="mess">
+		<div class="mess_tit">特别提醒</div>
+    	<div class="mess_txt">
+    	<h5>如果您的设备已经安装了叮咚, 则请打开叮咚，找到<span>“更多”->”提供建议或报告相关问题”</span>, 然后在那里报告这个问题.<br />
+		<br />
+		在叮咚里面报告问题，将会带上一些有用的信息来帮助我们更快的诊断问题。
+		</h5>
+		</div>
+		<div class="clear"></div>
+		<div class="mess_bnt close-note" style="cursor:pointer;">知道了</div>
+		<div class="cancel mess_close close-note" style="cursor:pointer;"><img src="/res/v3/cn/images/close.png" width="40" height="40" alt="close" /></div>
+	</div>
+
+</div>
+</div>
+
+<script type="text/javascript" src="/res/v3/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="/res/v3/js/common.js"></script>
+<script type="text/javascript" src="/js/util.js"></script>
+<script type="text/javascript" src="/js/rpc.js"></script>
+
+<script type="text/javascript">
+$('.deviceType-input').on('click', function(e){
+    var deviceTypeList = $('.deviceType-list');
+    if(deviceTypeList.hasClass('hidden')){
+    	deviceTypeList.removeClass('hidden');
+    }else{
+    	deviceTypeList.addClass('hidden');
+    }
+});
+
+$('.deviceType-list ul').on('click','li',function(e){
+     $('#deviceType').val($(e.target).attr("data-device-type"));
+     $('#deviceTypeText').val($(e.target).text());
+     $('.deviceType-list').addClass('hidden');
+});
+
+$('.issueType-input').on('click', function(e){
+    var issueTypeList = $('.issueType-list');
+    if(issueTypeList.hasClass('hidden')){
+    	issueTypeList.removeClass('hidden');
+    }else{
+    	issueTypeList.addClass('hidden');
+    }
+});
+
+$('.issueType-list ul').on('click','li',function(e){
+    $('#issueType').val($(e.target).attr("data-issue-type"));
+    $('#issueTypeText').val($(e.target).text());
+    $('.issueType-list').addClass('hidden');
+});
+
+var notePoped = false;
+function popNote() {
+	if(notePoped) {
+		return;
+	}else {
+		notePoped = true;
+	}
+	center($('#noteDlg'));
+	$("#noteDlg").slideToggle();
+	$(".mask").show();
+}
+
+$(".close-note").click(function(event){
+    event.preventDefault();
+    center($('#noteDlg'));
+    $("#noteDlg").slideToggle();
+    $(".mask").hide();
+});
+</script>
+
+<script type="text/javascript">
+$("#download a,.close-download").click(function(event){
+    event.preventDefault();
+    center($('#downloadDlg'));
+    $("#downloadDlg").slideToggle("med");
+    $(".mask").toggle();
+});
+</script>
+
+</body>
+</html>
